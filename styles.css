@@ -1,0 +1,73 @@
+/* CSS của bạn ở đây */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    width: 1024px !important;
+    margin: 0 auto;
+    padding: 20px;
+}
+.title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.text-area {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: #45a049;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.warning {
+    color: #FF5733;
+}
+.st-emotion-cache-1wbqy5l
+{
+    display: none;
+}
+.st-emotion-cache-13ln4jf
+{
+    max-width: 1024px;
+    padding: 1rem 1rem 10rem;
+    z-index: 9999900;
+}
+.st-emotion-cache-1n76uvr
+{
+    gap:0;
+}
+.h1
+{
+    padding: 0px !important;
+    font-weight: bold;
+    
+}
+.st-emotion-cache-asc41u
+{
+    text-align: justify !important;
+}
+.st-emotion-cache-ykwuo3
+{
+    gap:0;
+}
