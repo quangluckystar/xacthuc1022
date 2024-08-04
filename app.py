@@ -64,7 +64,7 @@ min_length = 50
 
 # Form nhập phản hồi
 document = st.text_area('Hãy nhập nội dung:'.format(min_length), height=180 )
-submitted = st.button('Thực hiện', on_click=submit_button)
+submitted = st.button('Thực hiện')
 
 # Hàm dự đoán
 def predict_label(text):
