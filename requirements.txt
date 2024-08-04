@@ -2,3 +2,4 @@ streamlit
 sklearn.preprocessing
 stopwordsiso
 underthesea
+openpyxl
