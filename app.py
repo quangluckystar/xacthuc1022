@@ -50,13 +50,13 @@ label_encoder = LabelEncoder()
 sample_labels = ['__label__PA', '__label__KPA'] #['__label__DGYK', '__label__DL', '__label__KDTT', '__label__Khac', '__label__PA', '__label__TC', '__label__TGTP']    # Example labels
 label_encoder.fit(sample_labels)
 
-# Load mô hình  từ file
-with open(os.path.join(MODEL_PATH, "svm-KPA.pkl"), 'rb') as KPA_model_file:
-    KPA_model = pickle.load(KPA_model_file)
-# Định nghĩa label encoder và khởi tạo nếu cần thiết
-KPA_label_encoder = LabelEncoder()
-KPA_sample_labels = ['_label__KDTT','__label__GDPL','__label__TC','__label__DGYK','__label__TGTP','__label__Khac','__label__DL'] #['__label__DGYK', '__label__DL', '__label__KDTT', '__label__Khac', '__label__PA', '__label__TC', '__label__TGTP']    # Example labels
-KPA_label_encoder.fit(KPA_sample_labels)
+# # Load mô hình  từ file
+# with open(os.path.join(MODEL_PATH, "svm-KPA.pkl"), 'rb') as KPA_model_file:
+#     KPA_model = pickle.load(KPA_model_file)
+# # Định nghĩa label encoder và khởi tạo nếu cần thiết
+# KPA_label_encoder = LabelEncoder()
+# KPA_sample_labels = ['_label__KDTT','__label__GDPL','__label__TC','__label__DGYK','__label__TGTP','__label__Khac','__label__DL'] #['__label__DGYK', '__label__DL', '__label__KDTT', '__label__Khac', '__label__PA', '__label__TC', '__label__TGTP']    # Example labels
+# KPA_label_encoder.fit(KPA_sample_labels)
 
 
 min_length = 50
@@ -272,8 +272,8 @@ if submitted:
         else:
             st.error("Phản ánh, Kiến nghị không hợp lệ")
              # Dự đoán nhãn KPA
-            predicted_label_KPA = KPA_label_encoder.inverse_transform([predict_label_KPA(processed_document)])[0]
-            st.write(predicted_label_KPA)
+           # predicted_label_KPA = KPA_label_encoder.inverse_transform([predict_label_KPA(processed_document)])[0]
+            #st.write(predicted_label_KPA)
         #st.write(predicted_label)
       # Phát hiện và tô màu từ ngữ thô tục trong văn bản
     #if processed_document:           
